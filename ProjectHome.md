@@ -1,0 +1,1 @@
+MySQL2i is a relatively simple compatibility layer between legacy code in PHP 4 which uses the old ext/mysql extension to the new MySQLi extension in PHP 5. Just include this file at the top of your scripts when you only have MySQLi installed and your ext/mysql code should work just fine.
