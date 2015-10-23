@@ -301,7 +301,7 @@ if(!extension_loaded("mysql")) {
     
     function mysql_real_escape_string($string, $link = NULL) {
         $link = mysql_resolve_link($link);
-        return mysqli_real_escape_stirng($link, $string);
+        return mysqli_real_escape_string($link, $string);
     }
     
     function mysql_result($result, $row, $field = NULL) {
