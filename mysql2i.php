@@ -25,9 +25,9 @@ without having to modify the legacy code.
 
 */
 
-if(!extension_loaded("mysql")) {
+if(!function_exists("mysql_connect")) {
     
-    if(!extension_loaded("mysqli")) {
+    if(!function_exists("mysqli_connect")) {
         trigger_error("You must have the MySQLi extension.", E_USER_ERROR);
     }
     
