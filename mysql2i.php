@@ -312,6 +312,11 @@ if(!extension_loaded("mysql")) {
         $link = mysql_resolve_link($link);
         return mysqli_stat($link);
     }
+	
+    function mysql_set_charset($charset, $link = null) {
+        $link = mysql_resolve_link($link);
+        return mysqli_query($link, "SET NAMES ".$charset.";");
+    }
     
     function mysql_tablename($result, $offset) {
         return mysql_not_implemented("mysql_tablename()");
