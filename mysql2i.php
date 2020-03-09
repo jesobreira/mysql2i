@@ -106,7 +106,7 @@ if(!extension_loaded("mysql")) {
         return mysqli_fetch_assoc($result);
     }
     
-    function mysql_fetch_array($result, $type = NULL) {
+    function mysql_fetch_array($result, $type = MYSQLI_BOTH) {
         return mysqli_fetch_array($result, $type);
     }
     
@@ -335,5 +335,4 @@ if(!extension_loaded("mysql")) {
         
     
 } /* End of extension_exists() test */
-    
-?>
+
